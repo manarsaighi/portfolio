@@ -1,11 +1,18 @@
 .App {
   color: white;
+  font-family: garamond;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
 }
+
 
 .vertical-menu {
   width: 100px;
-  margin-left: 1%;
-  font-weight: lighter;
+  margin: 1%;
+  font-size: 150%;
+
 }
 
 .vertical-menu a {
@@ -20,7 +27,11 @@
   font-weight: bold;
 }
 
+
 .title {
+  position: fixed;
+  bottom: 0;
   margin: 1%;
-  font-weight: lighter;
+  font-size: 15vw;
 }
+
