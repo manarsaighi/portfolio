@@ -15,20 +15,7 @@ function App() {
         <p>I am actively seeking internship or entry-level job oppurtunities. <a href="mailto:manarsaighi2003@icloud.com">Get in Touch!</a></p>
         </div>
 
-        <div class="contact">
-        <a href="https://github.com/manarsaighi" class="active">Github</a>
-        <a href="https://www.linkedin.com/in/manarsaighi/">LinkedIn</a>
-        <a href="mailto:manarsaighi2003@icloud.com">Email me!</a>
-        </div>
-     
-     <div>
-     <h1 class="title">Saighi</h1>
-     </div>
-      
-
-      </div>
-     
-      {/* <div id="projects">
+        <div id="projects">
         <div class="proj">
         <h1>1.Abstract Music Visualiser</h1>
         <h3>Group Project, Java</h3>
@@ -47,7 +34,22 @@ function App() {
         <p> a book tracking and rating desktop application. Implemented book tracking, reviewing and recommendation features. Utilised Entity Framework for database management and deployed on Azure for cloud integration.</p>
         </div>
 
-      </div> */}
+      </div>
+
+        <div class="contact">
+        <a href="https://github.com/manarsaighi" class="active">Github</a>
+        <a href="https://www.linkedin.com/in/manarsaighi/">LinkedIn</a>
+        <a href="mailto:manarsaighi2003@icloud.com">Email me!</a>
+        </div>
+     
+     <div>
+     <h1 class="title">Saighi</h1>
+     <h6>Work in progress... Last updated 16/10/24</h6>
+     </div>
+      
+
+      </div>
+     
     </div>
 
    
