@@ -1,11 +1,15 @@
-.App {
-  color: white;
-  font-family: garamond;
-  display: flex;
-  flex-direction: column;
-  scroll-behavior: smooth;
-  
-}
+
+
+@media only screen and (min-width: 833px) {
+
+  .App {
+    color: white;
+    font-family: garamond;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    
+  }
 
 #home {
   font-size: 3vh;
@@ -15,7 +19,6 @@
 
 #projects {
   margin-left: 90vh;
-  max-width: 700px;
   max-height: 97vh;
   position: absolute;
   overflow-x: hidden;
@@ -29,6 +32,12 @@
   display: none;
 }
 
+hr {
+  background-color: rgb(57, 51, 171);
+  height: 0.1px;
+  border: none;
+}
+
 
 .nav {
   flex-direction: column;
@@ -36,19 +45,22 @@
  
 }
 
-.nav a {
+.proj:hover {
   color: white; 
   display: block; 
   text-decoration: none; 
+  margin-left: 15px;
+  cursor: pointer;
 }
 
-.nav a:hover, .contact a:hover {
+
+.contact a:hover {
   font-style: italic;
   font-weight: bold;
 }
 
 .intro {
-  margin-top: 20px;
+  margin-top: -25px;
   max-width: 500px;
 }
 
@@ -58,13 +70,11 @@
 
 .contact {
   width: 20vw;
-  text-align: right;
-  position: absolute;
-  margin-left: 79%;
-  bottom: 1%;
+  text-align: left;
+  margin-top: 17%;
   flex-direction: column;
   display: flex;
-  margin-bottom: 2vh;
+  
 }
 
 .contact a{
@@ -95,3 +105,118 @@ h6 {
   font-size: 16px;
   color: gray;
 }
+
+}
+
+
+@media only screen and (max-width: 833px) {
+
+  .App {
+    color: white;
+    font-family: garamond;
+    display: flex;
+    scroll-behavior: smooth;
+    
+  }
+
+  #home {
+    font-size: 3vh;
+    flex-direction: column;
+    display: flex;
+  }
+  
+  #projects {
+    /* margin-left: 90vh;
+    max-height: 97vh; */
+    /* position: absolute; */
+    /* overflow-x: hidden; */
+
+  }
+  
+  .proj {
+    margin-right: 200px;
+  }
+  
+  #projects::-webkit-scrollbar {
+    display: none;
+  }
+  
+  hr {
+    background-color: rgb(57, 51, 171);
+    height: 0.1px;
+    border: none;
+  }
+  
+/*   
+  .nav {
+    flex-direction: column;
+    width: 80px;
+   
+  } */
+  
+  .proj:hover {
+    color: white; 
+    display: block; 
+    text-decoration: none; 
+    margin-left: 15px;
+    cursor: pointer;
+  }
+  
+  
+  .contact a:hover {
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  .intro {
+  
+    max-width: 200px;
+    min-height: 870px;
+   
+  }
+  
+  .intro a {
+    color: white;
+  }
+  
+  .contact {
+    width: 20vw;
+    text-align: left;
+    margin-top: 17%;
+    flex-direction: column;
+    display: flex;
+    
+  }
+  
+  .contact a{
+    color: white; 
+    display: block; 
+    text-decoration: none; 
+  
+  }
+  
+  
+  .title {
+  
+    font-size: 20vh;
+    position: absolute;
+    bottom:-40%;
+    
+  }
+  
+  #home {
+    min-height: 97vh;
+    max-height: 97vh;
+    position: relative;
+    
+  }
+  
+  /* h6 {
+    position: absolute;
+    bottom: .1%;
+    font-size: 16px;
+    color: gray;
+  } */
+
+  
+  }

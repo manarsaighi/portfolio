@@ -1,0 +1,22 @@
+.modal {
+    background-color: black;
+    margin-left: 90vh;
+    min-width: 800px;
+    max-height: 97vh;
+    min-height: 97vh;
+    position: absolute; 
+}
+
+.close-modal {
+    background: none;
+	color: inherit;
+	border: none;
+	font: inherit;
+    color: gray;
+}
+
+.close-modal:hover {
+    cursor: pointer;
+    font-style: italic;
+    font-weight: bolder;
+}
