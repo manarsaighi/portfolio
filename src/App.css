@@ -4,7 +4,8 @@
 
   .App {
     color: white;
-    font-family: garamond;
+    font-family: "Oxanium", sans-serif;
+    font-weight: 200;
     display: flex;
     flex-direction: column;
     scroll-behavior: smooth;
@@ -24,8 +25,13 @@
   overflow-x: hidden;
 }
 
-.proj {
+#proj {
   margin-right: 200px;
+ 
+}
+
+#proj:hover {
+  color: rgb(147, 196, 255);
 }
 
 #projects::-webkit-scrollbar {
@@ -33,7 +39,7 @@
 }
 
 hr {
-  background-color: rgb(57, 51, 171);
+  background-color: rgb(0, 115, 255);
   height: 0.1px;
   border: none;
 }
@@ -45,12 +51,14 @@ hr {
  
 }
 
-.proj:hover {
-  color: white; 
+#proj:hover {
+
   display: block; 
   text-decoration: none; 
-  margin-left: 15px;
+
+
   cursor: pointer;
+
 }
 
 

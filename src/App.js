@@ -26,61 +26,60 @@ function App() {
         </div>
 
         <div>
-          <h1 className="title">Saighi</h1>
+          <h1 className="title">msai</h1>
           {/* <h6>Work in progress... Last updated 17/10/24</h6> */}
         </div>
         
 
         {/* Projects Section */}
         <div id="projects">
-          <div className="proj" onClick={() => openModal(1)}>
-            <h1>i. Abstract Music Visualiser</h1>
+          <div id="proj" onClick={() => openModal(1)}>
+            <h1>i. ABSTRACT MUSIC VISUALISER</h1>
             <h3>Group Project, Java</h3>
             <p>An abstract visual representation of a chosen song using a combination of synchronizing 2D and 3D animations.</p>
           </div>
-          <hr></hr>
+        
 
-          <div className="proj" onClick={() => openModal(2)}>
-            <h1>ii. Genetic Algorithm Implementation</h1>
+          <div id="proj" onClick={() => openModal(2)}>
+            <h1>ii. GENETIC ALGORITHM </h1>
             <h3>Personal Project, Java</h3>
             <p>A genetic algorithm to find the optimal folding of an amino acid sequence using the 2D HP model. Visualises the phenotype of a given solution candidate.</p>
           </div>
-          <hr></hr>
+          
 
-          <div className="proj" onClick={() => openModal(3)}>
-            <h1>iii. DotNet Maui Desktop Application</h1>
+          <div id="proj" onClick={() => openModal(3)}>
+            <h1>iii. DOT NET MAUI APPLICATION</h1>
             <h3>Personal Project, C#</h3>
             <p>A book tracking and rating desktop application. Implemented book tracking, reviewing, and recommendation features. Utilized Entity Framework for database management and deployed on Azure for cloud integration.</p>
           </div>
-          <hr></hr>
+        
 
-          <div className="proj" onClick={() => openModal(5)}>
-            <h1>iv. Game Logging Website</h1>
+          <div id="proj" onClick={() => openModal(5)}>
+            <h1>iv. GAME LOGGING WEBSITE</h1>
             <h3>Personal Project, React, Node.js</h3>
             <p>A book tracking and rating desktop application. Implemented book tracking, reviewing, and recommendation features. Utilized Entity Framework for database management and deployed on Azure for cloud integration.</p>
           </div>
-          <hr></hr>
+      
 
-          <div className="proj" onClick={() => openModal(6)}>
-            <h1>v. Prim, Kruskal, Dijkstra</h1>
+          <div id="proj" onClick={() => openModal(6)}>
+            <h1>v. PRIM, KRUSKAL, DIJKSTRA</h1>
             <h3>Personal Project, C</h3>
             <p>A book tracking and rating desktop application. Implemented book tracking, reviewing, and recommendation features. Utilized Entity Framework for database management and deployed on Azure for cloud integration.</p>
           </div>
-          <hr></hr>
-
-          <div className="proj" onClick={() => openModal(3)}>
-            <h1>vi. Vape Quitting App</h1>
+          
+          <div id="proj" onClick={() => openModal(7)}>
+            <h1>vi. VAPESAVER</h1>
             <h3>Group Project, C#</h3>
             <p>Collaborated remotely with classmates during a study exchange to develop a vape cost tracking app. Presented weekly progress to a client and a panel of lecturers. Utilized Java and Firebase for backend storage and cloud services.</p>
           </div>
-          <hr></hr>
+      
 
-          <div className="proj" onClick={() => openModal(3)}>
+          <div id="proj" onClick={() => openModal(3)}>
             <h1>vii. DotNet Maui Desktop Application</h1>
             <h3>Personal Project, C#</h3>
             <p>A book tracking and rating desktop application. Implemented book tracking, reviewing, and recommendation features. Utilized Entity Framework for database management and deployed on Azure for cloud integration.</p>
           </div>
-          <hr></hr>
+         
         </div>
 
 
@@ -114,12 +113,20 @@ function App() {
         isOpen={activeModal === 4}
         toggleModal={closeModal}
         title="Your Modal Title"
-        content={(
-          <img src='/CV.jpg'></img>
-          
-        )}
-        
       />
+      <Modal
+          isOpen={activeModal === 7}
+          toggleModal={closeModal}
+          title="VAPESAVER"
+          content={(
+            <>
+            <h4>Java, Processing</h4>
+              <p>An abstract visual representation of a chosen song using a combination of synchronizing 2D and 3D animations.</p>
+              <p>This was a group project developed in Java, focusing on visualizing music.</p>
+              <a href='https://github.com/HadassahJoseph/VapeSaver'>Check it out on Github</a>
+            </>
+          )}        
+          />
 
         {/* Contact Section */}
         <div className="contact">
