@@ -1,54 +1,52 @@
+.App {
+  color: white;
+  font-family: "Oxanium", sans-serif;
+ 
+  
+}
 
 
 @media only screen and (min-width: 833px) {
 
-  .App {
-    color: white;
-    font-family: "Oxanium", sans-serif;
-    font-weight: 200;
-    display: flex;
-    flex-direction: column;
-    scroll-behavior: smooth;
-    
-  }
+
+
+
 
 #home {
   font-size: 3vh;
   flex-direction: column;
   display: flex;
+  margin-top: -10px ;
+  /* width: 100vw;
+  height: 100vh; */
+
+ 
 }
 
 #projects {
-  margin-left: 90vh;
-  max-height: 97vh;
+  /* right: 0; */
+  left: 48%;
+  max-height: 100%;
   position: absolute;
   overflow-x: hidden;
+
 }
 
 #proj {
-  margin-right: 200px;
+  margin: 50px;
  
 }
 
-#proj:hover {
+#date {
+  font-size: 16px;
   color: rgb(147, 196, 255);
+  
 }
+
+
 
 #projects::-webkit-scrollbar {
   display: none;
-}
-
-hr {
-  background-color: rgb(0, 115, 255);
-  height: 0.1px;
-  border: none;
-}
-
-
-.nav {
-  flex-direction: column;
-  width: 80px;
- 
 }
 
 #proj:hover {
@@ -56,30 +54,31 @@ hr {
   display: block; 
   text-decoration: none; 
 
-
+  color: rgb(147, 196, 255);
   cursor: pointer;
 
 }
 
 
+
 .contact a:hover {
-  font-style: italic;
-  font-weight: bold;
+  
+  color: rgb(147, 196, 255);
 }
 
 .intro {
-  margin-top: -25px;
   max-width: 500px;
 }
 
 .intro a {
-  color: white;
+  color: rgb(147, 196, 255);
+  text-decoration: none;
 }
 
 .contact {
-  width: 20vw;
-  text-align: left;
-  margin-top: 17%;
+  width: 40vw;
+  text-align: right;
+
   flex-direction: column;
   display: flex;
   
@@ -94,56 +93,38 @@ hr {
 
 
 .title {
-  bottom: 1%;
-  font-size: 15vw;
+  bottom: 0;
+  font-size: 10vw;
   position: absolute;
   margin: 0;
 }
-
-#home {
-  min-height: 97vh;
-  max-height: 97vh;
-  position: relative;
-  
 }
-
-h6 {
-  position: absolute;
-  bottom: .1%;
-  font-size: 16px;
-  color: gray;
-}
-
-}
-
 
 @media only screen and (max-width: 833px) {
 
-  .App {
-    color: white;
-    font-family: garamond;
-    display: flex;
-    scroll-behavior: smooth;
-    
-  }
-
   #home {
     font-size: 3vh;
-    flex-direction: column;
-    display: flex;
-  }
   
-  #projects {
-    /* margin-left: 90vh;
-    max-height: 97vh; */
-    /* position: absolute; */
-    /* overflow-x: hidden; */
+   
+  }
 
+  #projects {
+   
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Hide vertical scrolling */
+    scroll-snap-type: x mandatory; /* Optional: smooth snap effect when scrolling */
+    width: 100vw; /* The width of the viewport, ensuring only one item is shown at a time */
+  
   }
   
-  .proj {
-    margin-right: 200px;
+  #proj {
+    margin-bottom: 100px;
+    flex: 0 0 100vw; /* Ensure each #proj takes up the full width of the viewport */
+    margin: 20px 0; /* Vertical margin, but no horizontal margin to avoid gaps */
+    scroll-snap-align: start; /* Optional: helps snapping to each project when scrolling */
   }
+
   
   #projects::-webkit-scrollbar {
     display: none;
@@ -155,12 +136,6 @@ h6 {
     border: none;
   }
   
-/*   
-  .nav {
-    flex-direction: column;
-    width: 80px;
-   
-  } */
   
   .proj:hover {
     color: white; 
@@ -178,19 +153,31 @@ h6 {
   
   .intro {
   
-    max-width: 200px;
-    min-height: 870px;
+    max-width: 100vw;
+   
    
   }
   
   .intro a {
-    color: white;
+    color: rgb(147, 196, 255);
+    text-decoration: none;
   }
   
-  .contact {
+  /* .contact {
     width: 20vw;
     text-align: left;
     margin-top: 17%;
+    flex-direction: column;
+    display: flex;
+    
+  } */
+
+  .contact {
+    width: 40vw;
+    text-align: right;
+    position: absolute;
+    right: 1%;
+    bottom:0;
     flex-direction: column;
     display: flex;
     
@@ -205,11 +192,10 @@ h6 {
   
   
   .title {
-  
-    font-size: 20vh;
+    bottom: 0;
+    font-size: 10vw;
     position: absolute;
-    bottom:-40%;
-    
+    margin: 0;
   }
   
   #home {
