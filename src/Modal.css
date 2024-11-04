@@ -8,7 +8,7 @@
     border-radius: .5cm;
     border: 2px solid rgba(1, 1, 137, 0.41);
 
-    overflow: hidden;
+    overflow-x: scroll;
   
   }
 
@@ -26,6 +26,11 @@
     padding: 10px;
     transition: opacity 0.3s ease; /* Transition for fading effect */
 }
+
+
+.modal::-webkit-scrollbar {
+    width: 10px;
+  }
 
 .close-modal {
     background: none;
