@@ -1,10 +1,30 @@
+
+  
+  .modal {
+
+    
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: .5cm;
+    border: 2px solid rgba(1, 1, 137, 0.41);
+
+  
+  
+  }
+
+
+
 .modal {
-    background-color: black;
+    background-color: rgba(12, 12, 45, 0.789);
+    margin-top: 5vh;
     margin-left: 90vh;
-    min-width: 800px;
-    max-height: 97vh;
-    min-height: 97vh;
+    max-width: 55vw;
+    min-width: 55vw;
+    max-height: 90vh;
+    min-height: 90vh;
     position: absolute; 
+    padding: 10px;
+    transition: opacity 0.3s ease; /* Transition for fading effect */
 }
 
 .close-modal {
